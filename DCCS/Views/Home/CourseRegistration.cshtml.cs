@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 
-namespace DCCSPrototype.Views.Home
+namespace DCCS.Views.Home
 {
     public class CourseRegistrationModel : PageModel
     {

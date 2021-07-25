@@ -10,13 +10,14 @@
         <div class="container py-lg-5 py-3">
             <h2 class="title">About Us</h2>
             <ul class="breadcrumbs-custom-path mt-2">
-                <li><a href="#url">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                 <li class="active"><span class="fa fa-angle-double-right mx-2" aria-hidden="true"></span> About </li>
             </ul>
         </div>
     </div>
 </section>
 <!-- //breadcrumb -->
+
 <!-- /content-6-->
 <section class="w3l-content-6">
     <!-- /content-6-main-->
@@ -30,8 +31,7 @@
                     <div class="title-content text-left mb-2">
                         <h6 class="sub-title">About School</h6>
                         <h3 class="hny-title">
-                            We are qualified &
-                            of experience in this field
+                            Located at Garnet Valley Middle School, PA
                         </h3>
                     </div>
                     <p class="mt-3">
@@ -43,26 +43,62 @@
                         as well as to facilitate the mutual understanding between Chinese and
                         other ethnic groups in the local community through educational and cultural activities and events.
                     </p>
-                    <a href="about.html" class="btn btn-style btn-primary mt-4">Read More</a>
+                    <a class="btn btn-style btn-primary mt-4" asp-area="" asp-controller="Home" asp-action="About">Read More</a>
                 </div>
+
+                <div class="col-lg-6 mt-5 about-right-faq align-self order2">
+                    <div class="title-content text-left mb-2">
+                        <h6 class="sub-title">What We Believe</h6>
+                        <h3 class="hny-title">Learning for Life</h3>
+                    </div>
+                    <p class="mt-3">
+                        We offer courses and activities for both children and parents.
+                        We offer K-12 students academic subject classes, such as English and Math, 
+                        and go beyond by offering courses such as foreign languages, coding, public speaking, 
+                        music, drama, art, and sports. For our parents, we offer courses and activities such as arts and sports
+                    </p>
+                    <a class="btn btn-style btn-primary mt-4" asp-area="" asp-controller="Home" asp-action="About">Read More</a>
+                </div>
+                <div class="col-lg-6 mt-5 pl-lg-4">
+                    <img src="~/images/ab2_bak.jpg" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="~/images/ab1_bak.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5 about-right-faq align-self  pl-lg-4">
+                    <div class="title-content text-left mb-2">
+                        <h6 class="sub-title">What We Offer</h6>
+                        <h3 class="hny-title">
+                            We are qualified &
+                            of experience in this field
+                        </h3>
+                    </div>
+                    <p class="mt-3">
+                        Our academic courses are taught by teachers with Master's or Ph.D degrees with years' of teaching experience.
+                        Available courses include academic subjects, dance & art, and more, for both children and adults.
+                        We also provide a variety of exciting indoor and outdoor sports activities. 
+                        With typically 5-10 and a maximum of 12 students in a class, teachers are able to give great attention to each and every student.
+                    </p>
+                    <a class="btn btn-style btn-primary mt-4" asp-area="" asp-controller="Home" asp-action="About">Read More</a>
+                </div>
+
                 <div class="col-lg-6 mt-5 about-right-faq align-self order2">
                     <div class="title-content text-left mb-2">
                         <h6 class="sub-title">Who We Are</h6>
                         <h3 class="hny-title">We are Loving Parents Too</h3>
                     </div>
                     <p class="mt-3">
-                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur
-                        adipisicing
-                        elit.fugiat consequatur voluptatem nihil ad.
+                        It takes a village to raise our children! 
+                        As caring parents, we started this school hoping that our children are raised 
+                        in a warm and caring community. DCCS is such a community where our children study, 
+                        play and grow up together.
                     </p>
-                    <a href="about.html" class="btn btn-style btn-primary mt-4">Read More</a>
+                    <a class="btn btn-style btn-primary mt-4" asp-area="" asp-controller="Home" asp-action="About">Read More</a>
                 </div>
                 <div class="col-lg-6 mt-5 pl-lg-4">
                     <img src="~/images/ab2_bak.jpg" alt="" class="img-fluid">
                 </div>
-
-
             </div>
         </div>
 </section>
@@ -82,13 +118,13 @@
                         Our Tenets
                     </h6>
                     <h3 class="hny-title">
-                        Having Fun While Learning
+                        Having Fun While Learning, Together!
                     </h3>
                     <p class="mt-3">
-                        Lorem illum facere aperiam sequi optio consectetur adipisicing elitFuga,
-                        suscipit totam animi consequatur saepe blanditiis.Lorem ipsum dolor sit amet Phasellus
-                        lacinia id erat eu
-                        ullamcorper. Nunc id ipsum fringilla, gravida felis vitae.
+                        Fun has a positive effect on motivation levels, 
+                        determining what we learn and how much we retain. 
+                        Learning isn’t a one-off event. It requires repetition and dedication. 
+                        If the experience is fun, learners will stay curious and keep coming back for more.
                     </p>
 
                     <div class="content-4-bottom">
@@ -96,7 +132,12 @@
 
                             <div class="content4-right-info">
                                 <h6><a href="#">Our Stories</a></h6>
-                                <p>Lorem ipsum dolor sit amet,facere aperiam.</p>
+                                <p>
+                                    Delaware Chester Community School is a non-profit enrichment school founded in 2020 
+                                    by parents in the Garnet Valley area in the southwest Philadelphia Suburb. 
+                                    The school is dedicated to providing additional academic courses and extracurricular 
+                                    classes for our children from Kindergarten through Grade 12 students.
+                                </p>
                             </div>
 
                         </div>
@@ -104,7 +145,13 @@
 
                             <div class="content4-right-info">
                                 <h6><a href="#">Our Mission</a></h6>
-                                <p>Lorem ipsum dolor sit amet,facere aperiam.</p>
+                                <p>
+                                    Our mission is to inspire our children to succeed in school, sports, and life. 
+                                    We challenge our K-12 students to realize their potential not only by offering 
+                                    subject-specific classes, such as English and Math, that are taught at schools, 
+                                    but also extending beyond with courses such as foreign languages, coding, public 
+                                    speaking, music, art, and sports.
+                                </p>
                             </div>
 
                         </div>
@@ -115,51 +162,12 @@
     </div>
 </section>
 <!-- //content-6-section -->
-<!--//content-5-->
-<div class="w3l-content-5 py-5">
-    <div class="container py-lg-4">
-        <div class="row content-5-grids">
-            <div class="col-lg-4 col-md-6 content-5-one">
-                <div class="content5-gd-ingf">
-                    <div class="icon-holder mb-3">
-                        <span class="fa fa-users service-icon" aria-hidden="true"></span>
-                    </div>
-                    <h4>Brake fluid exchange</h4>
-                    <p>Lorem illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi consequatur saepe blanditiis</p>
-                    <a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 content-5-one">
-                <div class="content5-gd-ingf">
-                    <div class="icon-holder mb-3">
-                        <span class="fa fa-heart-o service-icon" aria-hidden="true"></span>
-                    </div>
-                    <h4>Wheel alignment</h4>
-                    <p>Lorem illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi consequatur saepe blanditiis</p>
-                    <a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 content-5-one">
-                <div class="content5-gd-ingf">
-                    <div class="icon-holder mb-3">
-                        <span class="fa fa-handshake-o service-icon" aria-hidden="true"></span>
-                    </div>
-                    <h4>Maintenance packages</h4>
-                    <p>Lorem illum facere aperiam sequi optio consectetur adipisicing elitFuga, suscipit totam animi consequatur saepe blanditiis</p>
-                    <a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<!--//content-5-->
 <!-- team -->
 <section class="w3l-team-main py-5" id="team">
     <div class="container py-lg-4">
         <div class="title-content text-center mb-lg-5 mb-4">
             <h6 class="sub-title">Our Staff</h6>
-            <h3 class="hny-title">Meet Our Leadership</h3>
+            <h3 class="hny-title">Meet Our Team</h3>
         </div>
         <div class="row inner-sec-w3layouts-w3pvt-lauinfo">
             <div class="col-md-3 col-6">

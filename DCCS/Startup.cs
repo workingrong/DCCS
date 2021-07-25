@@ -40,6 +40,8 @@ namespace DCCS
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.Configure<EmailSenderAuthOptions>(Configuration);
+
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

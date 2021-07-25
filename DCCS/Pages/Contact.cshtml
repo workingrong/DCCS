@@ -1,22 +1,25 @@
-﻿
+﻿@page
+@model DCCS.Pages.ContactModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
 @{
     ViewBag.Title = "Contact";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!-- about breadcrumb -->
+<!-- breadcrumb -->
 <section class="w3l-about-breadcrumb position-relative text-center">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
         <div class="container py-lg-5 py-3">
             <h2 class="title">Contact Us</h2>
             <ul class="breadcrumbs-custom-path mt-2">
-                <li><a href="#url">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                 <li class="active"><span class="fa fa-angle-double-right mx-2" aria-hidden="true"></span> Contact </li>
             </ul>
         </div>
     </div>
 </section>
-<!-- //about breadcrumb -->
+<!-- // breadcrumb -->
 <section class="w3l-contact-11">
     <div class="form-41-mian py-5">
         <div class="container py-lg-4">
@@ -29,27 +32,25 @@
                                 <h3 class="hny-title">Get In Touch</h3>
                             </div>
                             <p class="mt-3 mb-4 pr-lg-5">
-                                Hi there, you can reach us by e-mail or phone. Drop us line so we can talk
+                                Hi there, you can reach us by e-mail. Drop us line so we can talk
                                 futher about that.
                             </p>
-                            <h6 class="mb-4"> For more info or inquiry about our courses, or career opportunities please feel free to get in touch with us.</h6>
+                            <h6 class="mb-4"> For more info or inquiry about our courses, or volunteer and employment opportunities please feel free to get in touch with us.</h6>
                         </div>
                         <div class="hours">
                             <h6 class="mt-4">Email:</h6>
                             <p>
-                                <a href="mailto:info@dccs-us.org">
-                                    info@dccs-us.org
-                                </a>
+                                <a href="mailto:dccs.org@gmail.com">dccs.org@gmail.com</a>
                             </p>
                             <h6 class="mt-4">Address:</h6>
-                            <p> Garnet Valley, PA 19060, USA</p>
-                            <h6 class="mt-4">Contact:</h6>
-                            <p class="margin-top">
-                                <a href="tel:+(1) 123 456 7890">
-                                    +(1)
-                                    123 456 7890
-                                </a>
-                            </p>
+                            <p> 601 Smithbridge Rd, Glen Mills, PA 19342, USA</p>
+                            @*<h6 class="mt-4">Contact:</h6>
+                                <p class="margin-top">
+                                    <a href="tel:+(1) 123 456 7890">
+                                        +(1)
+                                        123 456 7890
+                                    </a>
+                                </p>*@
                         </div>
                     </div>
                 </div>
@@ -57,20 +58,26 @@
                     <div class="title-content text-left">
                         <h3 class="hny-title mb-lg-5 mb-4">Send Us A Message</h3>
                     </div>
-                    <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+                    <form method="post" class="signin-form">
+                        <div asp-validation-summary="All" class="text-danger"></div>
                         <div class="form-input">
-                            <input type="text" name="w3lName" id="w3lName" placeholder="Name" />
+                            <label asp-for="Input.Name"></label>
+                            <input asp-for="Input.Name" class="form-control" />
                         </div>
                         <div class="row con-two">
                             <div class="col-lg-6 form-input">
-                                <input type="email" name="w3lSender" id="w3lSender" placeholder="Email" required="" />
+                                <label asp-for="Input.Email"></label>
+                                <input asp-for="Input.Email" class="form-control" />
+                                <span asp-validation-for="Input.Email" class="text-danger"></span>
                             </div>
                             <div class="col-lg-6 form-input">
-                                <input type="text" name="w3lSubect" placeholder="Subject" class="contact-input" />
+                                <label asp-for="Input.Subject"></label>
+                                <input asp-for="Input.Subject" class="form-control" />
                             </div>
                         </div>
                         <div class="form-input">
-                            <textarea placeholder="Message" name="w3lMessage" id="w3lMessage" required=""></textarea>
+                            <label asp-for="Input.Message"></label>
+                            <textarea asp-for="Input.Message" class="form-control"></textarea>
                         </div>
                         <div class="submit-button text-lg-right">
                             <button type="submit" class="btn btn-style">Submit</button>
@@ -81,47 +88,52 @@
         </div>
     </div>
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24501.66559899262!2d-75.48717314704972!3d39.858371870758816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6e5980302d98f%3A0xaf488cb38d76bcfa!2sGarnet%20Valley%2C%20PA%2019014!5e0!3m2!1sen!2sus!4v1625237330635!5m2!1sen!2sus"
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.233273728423!2d-75.51630618476644!3d39.86901237943246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6e543b387325b%3A0x1ed39cd6520d505a!2sGarnet%20Valley%20Middle%20School!5e0!3m2!1sen!2sus!4v1627228319856!5m2!1sen!2sus"
                 frameborder="0" allowfullscreen=""></iframe>
     </div>
 </section>
 <!-- //contact-form -->
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
 <!-- Template JavaScript -->
 <script src="~/js/jquery-3.3.1.min.js"></script>
 <script src="~/js/theme-change.js"></script>
 <!-- disable body scroll which navbar is in active -->
 <script>
     $(function () {
-      $('.navbar-toggler').click(function () {
-        $('body').toggleClass('noscroll');
-      })
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
     });
 </script>
 <!-- disable body scroll which navbar is in active -->
 <!--/MENU-JS-->
 <script>
     $(window).on("scroll", function () {
-      var scroll = $(window).scrollTop();
+        var scroll = $(window).scrollTop();
 
-      if (scroll >= 80) {
-        $("#site-header").addClass("nav-fixed");
-      } else {
-        $("#site-header").removeClass("nav-fixed");
-      }
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
     });
 
     //Main navigation Active Class Add Remove
     $(".navbar-toggler").on("click", function () {
-      $("header").toggleClass("active");
+        $("header").toggleClass("active");
     });
     $(document).on("ready", function () {
-      if ($(window).width() > 991) {
-        $("header").removeClass("active");
-      }
-      $(window).on("resize", function () {
         if ($(window).width() > 991) {
-          $("header").removeClass("active");
+            $("header").removeClass("active");
         }
-      });
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
     });
 </script>

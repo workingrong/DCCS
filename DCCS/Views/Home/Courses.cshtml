@@ -4,45 +4,70 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!-- about breadcrumb -->
+<!-- breadcrumb -->
 <section class="w3l-about-breadcrumb position-relative text-center">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
         <div class="container py-lg-5 py-3">
             <h2 class="title">Courses</h2>
             <ul class="breadcrumbs-custom-path mt-2">
-                <li><a href="#url">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                 <li class="active"><span class="fa fa-angle-double-right mx-2" aria-hidden="true"></span> Courses </li>
             </ul>
         </div>
     </div>
 </section>
-<!-- //about breadcrumb -->
+<!-- //breadcrumb -->
+
 <!--/services-sec-->
 <div class="w3-services py-5">
     <div class="container py-lg-4">
         <div class="title-content text-left mb-lg-5 mb-4">
             <h6 class="sub-title">Our Courses</h6>
             <h3 class="hny-title">Great Courses</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio.</p>
-
+            <p>
+                Most of our classes are in-person classes,
+                provided at Garnet Valley Middle School campus on Sundays,
+                to serve students in the area neighboring Garnet Valley,
+                including North Wilmington, Glen Mills, Chadds Ford, Media, West Chester, etc.
+                Our in-person classes are designed in such a way that students
+                can learn in a fun and interactive manner.
+            </p>
+            <p>
+                Some of our classes are taught online. Founded in 2020, 
+                when the pandemic significantly disrupted school education 
+                and impaired socialization, our online courses and activities 
+                during the 2020-2021 school year greatly benefited students. 
+                In the future, we will carry on this tradition and provide some 
+                classes virtually based on demand.
+            </p>
+            <p>
+                We also have classes for adults, such as dance, art, and sports.
+                For parents interested in taking any of the lessons,
+                we believe it's a great way to learn and foster a sense of community building.
+            </p>
         </div>
         <div class="row w3-services-grids">
-            <div class="col-lg-4 col-md-6 causes-grid">
+            <div class="col-lg-4 col-md-6 causes-grid align-self-start">
                 <div class="causes-grid-info">
                     <a href="blog-single.html"><img src="~/images/ab1_bak.jpg" class="img-fuild" alt=""></a>
                     <a href="#" class="cause-title-wrap">
                         <h4 class="cause-title">
-                            Mandarin Chinese
+                            Chinese
                         </h4>
                     </a>
                     <p class="card-text mb-0">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio.
+                        We offer both Chinese as Heritage Language (CHL) classes
+                        and Chinese as Second Language (CSL) classes.
+                        For CHL classes, Ma Liping Chinese (马力平中文),
+                        Zhengquan Chinese（整全中文）and Meizhou Huayu  (美洲华语) textbooks are used.
+                        For CSL classes, we have used Go! Chinese textbooks in the past,
+                        but we are open to other options too, should parents have other preferences.
                     </p>
 
-                    <a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>
+                    @*<a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>*@
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 causes-grid">
+            <div class="col-lg-4 col-md-6 causes-grid align-self-start">
                 <div class="causes-grid-info">
                     <a href="blog-single.html"><img src="~/images/ab2_bak.jpg" class="img-fuild" alt=""></a>
                     <a href="#" class="cause-title-wrap">
@@ -51,44 +76,32 @@
                         </h4>
                     </a>
                     <p class="card-text mb-0">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio.
+                        From pre-math count 1 to AMC 10, our math courses are taught by teachers
+                        who love math and have years of teaching experience and who have
+                        Master or Ph.D. degrees in stems degrees.
                     </p>
 
-                    <a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>
+                    @*<a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>*@
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 causes-grid">
+            <div class="col-lg-4 col-md-6 causes-grid align-self-start">
                 <div class="causes-grid-info">
                     <a href="blog-single.html"><img src="~/images/ab3_bak.jpg" class="img-fuild" alt=""></a>
                     <a href="#" class="cause-title-wrap">
                         <h4 class="cause-title">
-                            English
+                            English Reading & Writing
                         </h4>
                     </a>
                     <p class="card-text mb-0">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio.
+                        English Reading and Writing classes are taught by Ben Fiedor,
+                        who holds a Ph.D. of Philosophy degree from Brown University
+                        and has many years of teaching and tutoring experience.
                     </p>
 
-                    <a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>
+                    @*<a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>*@
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 causes-grid">
-                <div class="causes-grid-info">
-                    <a href="blog-single.html"><img src="~/images/ab4_bak.jpg" class="img-fuild" alt=""></a>
-                    <a href="#" class="cause-title-wrap">
-                        <h4 class="cause-title">
-                            Coding
-                        </h4>
-                    </a>
-                    <p class="card-text mb-0">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio.
-                    </p>
-
-
-                    <a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 causes-grid">
+            <div class="col-lg-4 col-md-6 causes-grid align-self-start">
                 <div class="causes-grid-info">
                     <a href="blog-single.html"><img src="~/images/ab5_bak.jpg" class="img-fuild" alt=""></a>
                     <a href="#" class="cause-title-wrap">
@@ -97,25 +110,70 @@
                         </h4>
                     </a>
                     <p class="card-text mb-0">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio.
+                        Chess classes are taught by Gregory Rogers,
+                        the founder and coach of Chess Masters of Delaware.
+                        Mr. Rogers has led the students in the club to win many national and regional trophies.
                     </p>
 
-                    <a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>
+                    @*<a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>*@
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 causes-grid">
+            <div class="col-lg-4 col-md-6 causes-grid align-self-start">
                 <div class="causes-grid-info">
                     <a href="blog-single.html"><img src="~/images/ab6_bak.jpg" class="img-fuild" alt=""></a>
                     <a href="#" class="cause-title-wrap">
                         <h4 class="cause-title">
-                            Arts
+                            Drawing
                         </h4>
                     </a>
                     <p class="card-text mb-0">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit hic odio.
+                        In our drawing classes, our experienced art teacher guides the students to
+                        explore basic drawing principles such as line, color, and texture and
+                        develop painting techniques using various paint media.
                     </p>
 
-                    <a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>
+                    @*<a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>*@
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 causes-grid align-self-start">
+                <div class="causes-grid-info">
+                    <a href="blog-single.html"><img src="~/images/ab6_bak.jpg" class="img-fuild" alt=""></a>
+                    <a href="#" class="cause-title-wrap">
+                        <h4 class="cause-title">
+                            Dance
+                        </h4>
+                    </a>
+                    <p class="card-text mb-0">
+                        Our dance classes teach Chinese Folk Dance and Contemporary dance.
+                        Students learn dance and gain valuable performing experience through
+                        participation in weekly classes and holiday performances.
+                    </p>
+
+                    @*<a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>*@
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 causes-grid align-self-start">
+                <div class="causes-grid-info">
+                    <a href="blog-single.html"><img src="~/images/ab4_bak.jpg" class="img-fuild" alt=""></a>
+                    <a href="#" class="cause-title-wrap">
+                        <h4 class="cause-title">
+                            Public Speaking
+                        </h4>
+                    </a>
+                    <p class="card-text mb-0">
+                        Public speaking classes are taught by Mike Nie,
+                        founder of “Speak to lead LLC”.
+                        Coach Nie has won many awards in public speaking and is a distinguished toastmaster.
+                        He has years of experience teaching public speaking.
+
+                        In each meeting, speaking techniques are taught through watching and analyzing famous
+                        speeches. After each lesson, students are assigned a 2-3 min speech homework to
+                        be presented during class. Homework submission is analyzed individually by
+                        the coach both offline and during class.
+                    </p>
+
+
+                    @*<a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>*@
                 </div>
             </div>
         </div>

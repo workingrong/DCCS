@@ -1,6 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @inject SignInManager<IdentityUser> SignInManager
-@model DCCSPrototype.Views.Home.CourseRegistrationModel
+@model DCCS.Views.Home.CourseRegistrationModel
 
 @{
     ViewData["Title"] = "CourseRegistration";
@@ -13,7 +13,7 @@
         <div class="container py-lg-5 py-3">
             <h2 class="title">Course Registration</h2>
             <ul class="breadcrumbs-custom-path mt-2">
-                <li><a href="#url">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                 <li class="active"><span class="fa fa-angle-double-right mx-2" aria-hidden="true"></span> Course Registration </li>
             </ul>
         </div>
