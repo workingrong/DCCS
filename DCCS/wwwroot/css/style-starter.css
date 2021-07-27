@@ -16663,11 +16663,16 @@ button.owl-next {
 }
 
 .ch-img-6 {
-    background-image: url(../images/course_drawing.jpg);
+    background-image: url(../images/course_coding.jpg);
     background-size: contain;
 }
 
 .ch-img-7 {
+    background-image: url(../images/course_drawing.jpg);
+    background-size: contain;
+}
+
+.ch-img-8 {
     background-image: url(../images/course_dancing.jpg);
     background-size: contain;
 }
